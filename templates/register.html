@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+<form action="/stu/" method="post">
+   {% csrf_token %}
+
+        <p><label for="{{ stuFrm.sname.id_for_label }}">学生姓名：</label>{{ stuFrm.sname }}</p>
+        <p><label for="{{ clsFrm.cname.id_for_label }}">班级名称：</label>{{ clsFrm.cname }}</p>
+
+        <p><input type="submit" value="注册"/></p>
+
+</form>
+</body>
+</html>
